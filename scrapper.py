@@ -39,7 +39,7 @@ def check_price(best_price, url):
     }
 
     if price < best_price:
-        message = (f"That is awesome! The price is only R${price}!\nIf you buy {product_name} now you are gona save <b>R${best_price-price}</b>.\n")
+        message = (f"That is awesome! The price is only R${price}!\nIf you buy {product_name} now you are gona save R${best_price-price}.\n")
         send_mail(message, item_info)
 
     elif price == best_price:
